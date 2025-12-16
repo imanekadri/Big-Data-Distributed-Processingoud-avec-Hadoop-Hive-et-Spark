@@ -46,20 +46,34 @@ Cette architecture simule un environnement cloud Big Data réel sur une machine 
 
 MY_PROJECT_BIGDATA/
 │
+
 ├── docker-compose.yml
+
 ├── datasets/
+
 │ ├── sales.csv
+
 │ ├── products.csv
+
 │ ├── web_logs.csv
+
 │
 ├── scripts/
+
 │ ├── mapper_wordcount.py
+
 │ ├── reducer_wordcount.py
+
 │ ├── sales_mapper.py
+
 │ ├── sales_reducer.py
+
 │ ├── spark_sales_analysis.py
+
 │ ├── web_logs_analysis.py
+
 │ ├── pipeline_minio.py
+
 │
 └── README.md
 
