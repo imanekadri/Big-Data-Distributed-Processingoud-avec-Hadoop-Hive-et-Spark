@@ -1,16 +1,19 @@
 # Big Data & Cloud Computing Project
 ## Hadoop, Hive, Spark & MinIO using Docker
 
+---
+
 ## 📌 Introduction
 Avec l’essor du cloud computing et l’augmentation massive des volumes de données, les technologies Big Data sont devenues indispensables pour le stockage et le traitement distribué de l’information.  
+
 Ce projet a pour objectif de mettre en œuvre une architecture Big Data complète en utilisant des solutions open source telles que **Hadoop, Hive, Apache Spark et MinIO**, déployées à l’aide de **Docker**.
 
-Le projet couvre l’ensemble du cycle Big Data :  
-- stockage distribué (HDFS et MinIO),
-- traitement MapReduce,
-- interrogation SQL avec Hive,
-- analyse avancée avec Apache Spark,
-- automatisation d’un pipeline Big Data.
+Le projet couvre l’ensemble du cycle Big Data :
+- Stockage distribué (HDFS et MinIO)
+- Traitement MapReduce
+- Interrogation SQL avec Hive
+- Analyse avancée avec Apache Spark
+- Automatisation d’un pipeline Big Data
 
 ---
 
@@ -25,7 +28,7 @@ Les services suivants sont déployés sous forme de conteneurs Docker :
   - Hive Server
   - Metastore
 - **Apache Spark**
-- **MinIO (stockage objet compatible S3)**
+- **MinIO** (stockage objet compatible Amazon S3)
 
 Cette architecture simule un environnement cloud Big Data réel sur une machine locale.
 
@@ -43,6 +46,7 @@ Cette architecture simule un environnement cloud Big Data réel sur une machine 
 ---
 
 ## 📂 Structure du projet
+
 
 MY_PROJECT_BIGDATA/
 │
@@ -77,20 +81,20 @@ MY_PROJECT_BIGDATA/
 │
 └── README.md
 
-Interfaces Web :
 
-HDFS NameNode : http://localhost:9870
+---
 
-Spark UI : http://localhost:8080
+## 🌐 Interfaces Web
 
-MinIO Console : http://localhost:9001
+- **HDFS NameNode** : http://localhost:9870  
+- **Apache Spark UI** : http://localhost:8080  
+- **MinIO Console** : http://localhost:9001  
 
 ---
 
 ## 🚀 Lancement de l’environnement
 
-Démarrer tous les services :
+Démarrer tous les services Docker :
 
 ```bash
 docker compose up -d
-
