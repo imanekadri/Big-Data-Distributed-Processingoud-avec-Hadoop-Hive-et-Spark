@@ -41,7 +41,7 @@ df_group.write.mode("overwrite").csv("s3a://datasets/results/sales_by_product", 
 df_join.write.mode("overwrite").csv("s3a://datasets/results/sales_join", header=True)
 df_top_pages.write.mode("overwrite").csv("s3a://datasets/results/web_top_pages", header=True)
 
-print(f"✅ Pipeline terminé. Résultats sauvegardés sur MinIO dans 'datasets/results/'")
+print(f" Pipeline terminé. Résultats sauvegardés sur MinIO dans 'datasets/results/'")
 
 spark.stop()
 

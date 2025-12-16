@@ -1,12 +1,11 @@
 import time
 import subprocess
 
-print("===== Comparaison MapReduce vs Hive vs Spark =====")
 
-# =====================
+
+ 
 # 1. MapReduce
-# =====================
-print("\n1) MapReduce")
+
 start = time.time()
 
 subprocess.run([
@@ -20,10 +19,9 @@ subprocess.run([
 time_mapreduce = time.time() - start
 print(f"Temps MapReduce : {time_mapreduce:.2f} s")
 
-# =====================
+
 # 2. Hive
-# =====================
-print("\n2) Hive")
+
 start = time.time()
 
 subprocess.run([
@@ -36,10 +34,9 @@ subprocess.run([
 time_hive = time.time() - start
 print(f"Temps Hive : {time_hive:.2f} s")
 
-# =====================
+
 # 3. Spark
-# =====================
-print("\n3) Spark")
+ 
 start = time.time()
 
 subprocess.run([
@@ -52,10 +49,9 @@ subprocess.run([
 time_spark = time.time() - start
 print(f"Temps Spark : {time_spark:.2f} s")
 
-# =====================
+
 # Comparaison
-# =====================
-print("\n===== Résumé =====")
+
 print(f"MapReduce : {time_mapreduce:.2f} s")
 print(f"Hive      : {time_hive:.2f} s")
 print(f"Spark     : {time_spark:.2f} s")
