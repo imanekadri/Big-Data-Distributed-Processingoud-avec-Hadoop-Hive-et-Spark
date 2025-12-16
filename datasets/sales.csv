@@ -1,0 +1,6 @@
+product_id,product_name,quantity,price,date
+1,Apple,10,1.5,2025-12-15
+2,Banana,5,0.8,2025-12-15
+3,Orange,8,1.2,2025-12-15
+4,Apple,7,1.5,2025-12-16
+5,Banana,3,0.8,2025-12-16
